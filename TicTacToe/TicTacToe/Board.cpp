@@ -1,6 +1,5 @@
 #include "Board.h"
 
-
 Board::Board()
 {
 	for (auto& row : board)
@@ -20,3 +19,5 @@ void Board::PrintBoard() const
 		std::cout << std::endl;
 	}
 }
+
+

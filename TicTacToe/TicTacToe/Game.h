@@ -20,6 +20,7 @@ public:
 	Game();
 	bool Place(Player player, Board::BoardType pos);
 	bool IsWon();
+	bool IsValidPos();
 	void Run();
 	Player StartingPlayer();
 };

@@ -1,6 +1,8 @@
 #include "Game.h"
+#include "Board.h"
 #include <iostream>
 #include <random>
+#include <array>
 
 
 std::ostream& operator<<(std::ostream& os, const Player& player) {
@@ -43,10 +45,21 @@ void Game::Run()
 
     do
     {
-        std::cout << "Enter coordinates: " << std::endl;
+        int row;
+        std::cout << "Enter Row: " << std::endl;
+        std::cin >> row;
 
+        int column;
+        std::cout << "Enter Column: " << std::endl;
+        std::cin >> column;
 
+        Game::board[row][column];
 
+        //if (Game::IsValidPos())
+        //{
+        //    // continue
+        //}
+        //break; // tjek om spillet er vundet, eller der ikke er flere positioner tilgængeligepp
 
     } while (true);
 }
